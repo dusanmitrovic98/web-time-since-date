@@ -90,3 +90,16 @@
             fullHoursElement.innerHTML = `Number of hours: ${timeDifference / (1000 * 60 * 60)}`;
 
             const fullMinutesElement = document.getElementById('fullMinutes');
+            fullMinutesElement.innerHTML = `Number of minutes: ${timeDifference / (1000 * 60)}`;
+
+            const fullSecondsElement = document.getElementById('fullSeconds');
+            fullSecondsElement.innerHTML = `Number of seconds: ${timeDifference / 1000}`;
+        }
+
+        // Call the function on page load to show the time difference for the default date
+        updateTimeSinceSetDate();
+    </script>
+
+</body>
+
+</html>
